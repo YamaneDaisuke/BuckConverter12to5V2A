@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9,6 +9,10 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -14936,6 +14940,54 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="wirepad">
+<description>&lt;b&gt;Single Pads&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="1,6/0,8">
+<description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
+<wire x1="-0.762" y1="0.762" x2="-0.508" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="0.762" x2="-0.762" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="0.762" x2="0.762" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="0.762" x2="0.508" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="-0.508" x2="0.762" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="-0.762" x2="0.508" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-0.508" y1="-0.762" x2="-0.762" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="-0.762" x2="-0.762" y2="-0.508" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.635" width="0.1524" layer="51"/>
+<pad name="1" x="0" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<text x="-0.762" y="1.016" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="0.6" size="0.0254" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="PAD">
+<wire x1="-1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" width="0.254" layer="94"/>
+<text x="-1.143" y="1.8542" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.143" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="1,6/0,8" prefix="PAD" uservalue="yes">
+<description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
+<gates>
+<gate name="P" symbol="PAD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1,6/0,8">
+<connects>
+<connect gate="P" pin="P" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -15000,6 +15052,12 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <part name="LED2" library="led" deviceset="LED" device="3MM"/>
 <part name="R_LED2" library="rcl" deviceset="R-US_" device="0204/5" value="4.7k"/>
 <part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
+<part name="PAD1" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD2" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY18" library="supply2" deviceset="+12V" device=""/>
+<part name="PAD3" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD4" library="wirepad" deviceset="1,6/0,8" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15068,6 +15126,12 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <instance part="LED2" gate="G$1" x="38.1" y="-121.92"/>
 <instance part="R_LED2" gate="G$1" x="38.1" y="-114.3" rot="R90"/>
 <instance part="SUPPLY16" gate="GND" x="38.1" y="-129.54"/>
+<instance part="PAD1" gate="P" x="152.4" y="43.18" rot="R180"/>
+<instance part="PAD2" gate="P" x="152.4" y="50.8" rot="R180"/>
+<instance part="SUPPLY17" gate="GND" x="142.24" y="40.64"/>
+<instance part="SUPPLY18" gate="+12V" x="142.24" y="53.34"/>
+<instance part="PAD3" gate="P" x="-35.56" y="5.08" rot="R270"/>
+<instance part="PAD4" gate="P" x="53.34" y="5.08" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -15122,6 +15186,11 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <pinref part="IC1" gate="G$1" pin="IN"/>
 <wire x1="-35.56" y1="-43.18" x2="-25.4" y2="-43.18" width="0.1524" layer="91"/>
 <junction x="-35.56" y="-43.18"/>
+</segment>
+<segment>
+<pinref part="SUPPLY18" gate="+12V" pin="+12V"/>
+<pinref part="PAD2" gate="P" pin="P"/>
+<wire x1="142.24" y1="50.8" x2="149.86" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GATE_SIG" class="0">
@@ -15253,6 +15322,11 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <pinref part="SUPPLY16" gate="GND" pin="GND"/>
 <pinref part="LED2" gate="G$1" pin="C"/>
 </segment>
+<segment>
+<pinref part="PAD1" gate="P" pin="P"/>
+<pinref part="SUPPLY17" gate="GND" pin="GND"/>
+<wire x1="149.86" y1="43.18" x2="142.24" y2="43.18" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$5" class="0">
 <segment>
@@ -15316,12 +15390,15 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <net name="IC_SIG_5V" class="0">
 <segment>
 <pinref part="R_5V" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="0" x2="33.02" y2="0" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="0" x2="53.34" y2="0" width="0.1524" layer="91"/>
 <label x="27.94" y="0" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="JP1" gate="1" pin="1"/>
+<wire x1="53.34" y1="0" x2="33.02" y2="0" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="0" x2="27.94" y2="0" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="17.78" x2="33.02" y2="0" width="0.1524" layer="91"/>
 <junction x="33.02" y="0"/>
+<pinref part="PAD4" gate="P" pin="P"/>
+<wire x1="53.34" y1="2.54" x2="53.34" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VA_IN" class="0">
@@ -15338,6 +15415,8 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="-27.94" y1="-2.54" x2="-35.56" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="-27.94" y="-2.54"/>
+<pinref part="PAD3" gate="P" pin="P"/>
+<wire x1="-35.56" y1="2.54" x2="-35.56" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="1" pin="3"/>
