@@ -6741,10 +6741,10 @@ MELF 0.12 W</description>
 <package name="M2012">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
 MELF 0.10 W</description>
-<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.6555" y1="0.983" x2="1.6555" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.6555" y1="-0.983" x2="-1.6555" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.6555" y1="-0.983" x2="-1.6555" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.6555" y1="0.983" x2="1.6555" y2="-0.983" width="0.0508" layer="39"/>
 <wire x1="0.7112" y1="0.635" x2="-0.7112" y2="0.635" width="0.1524" layer="51"/>
 <wire x1="0.7112" y1="-0.635" x2="-0.7112" y2="-0.635" width="0.1524" layer="51"/>
 <smd name="1" x="-0.95" y="0" dx="1.3" dy="1.6" layer="1"/>
@@ -6844,8 +6844,8 @@ type 0204, grid 5 mm</description>
 <wire x1="1.524" y1="0.889" x2="1.27" y2="0.889" width="0.1524" layer="21"/>
 <wire x1="1.524" y1="-0.889" x2="1.27" y2="-0.889" width="0.1524" layer="21"/>
 <wire x1="1.778" y1="-0.635" x2="1.778" y2="0.635" width="0.1524" layer="51"/>
-<pad name="1" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="2.54" y="0" drill="0.8128" shape="octagon"/>
+<pad name="1" x="-2.54" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="2" x="2.54" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
 <text x="-2.0066" y="1.1684" size="0.9906" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.1336" y="-2.3114" size="0.9906" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-2.032" y1="-0.254" x2="-1.778" y2="0.254" layer="51"/>
@@ -6872,8 +6872,8 @@ type 0207, grid 10 mm</description>
 <wire x1="2.921" y1="1.143" x2="2.54" y2="1.143" width="0.1524" layer="21"/>
 <wire x1="2.921" y1="-1.143" x2="2.54" y2="-1.143" width="0.1524" layer="21"/>
 <wire x1="3.175" y1="-0.889" x2="3.175" y2="0.889" width="0.1524" layer="21"/>
-<pad name="1" x="-5.08" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="5.08" y="0" drill="0.8128" shape="octagon"/>
+<pad name="1" x="-5.08" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="2" x="5.08" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
 <text x="-3.048" y="1.524" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.2606" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="3.175" y1="-0.3048" x2="4.0386" y2="0.3048" layer="21"/>
@@ -6990,8 +6990,8 @@ type 0207, grid 7.5 mm</description>
 <wire x1="2.921" y1="-1.143" x2="2.54" y2="-1.143" width="0.1524" layer="21"/>
 <wire x1="3.175" y1="-0.889" x2="3.175" y2="0.889" width="0.1524" layer="51"/>
 <wire x1="3.429" y1="0" x2="3.81" y2="0" width="0.6096" layer="51"/>
-<pad name="1" x="-3.81" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="3.81" y="0" drill="0.8128" shape="octagon"/>
+<pad name="1" x="-3.81" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="2" x="3.81" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
 <text x="-2.54" y="1.397" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.286" y="-0.5588" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-3.429" y1="-0.3048" x2="-3.175" y2="0.3048" layer="51"/>
@@ -7526,8 +7526,8 @@ type 0204, grid 2.5 mm</description>
 <wire x1="-0.127" y1="0" x2="0.127" y2="0" width="0.508" layer="21"/>
 <circle x="-1.27" y="0" radius="0.889" width="0.1524" layer="51"/>
 <circle x="-1.27" y="0" radius="0.635" width="0.0508" layer="51"/>
-<pad name="1" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="1" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="2" x="1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
 <text x="-2.1336" y="1.1684" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.1336" y="-2.3114" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
@@ -8073,8 +8073,8 @@ grid 2.5 mm, outline 2.4 x 4.4 mm</description>
 <wire x1="0.3302" y1="0.762" x2="0.3302" y2="-0.762" width="0.3048" layer="21"/>
 <wire x1="1.27" y1="0" x2="0.3302" y2="0" width="0.1524" layer="51"/>
 <wire x1="-1.27" y1="0" x2="-0.3048" y2="0" width="0.1524" layer="51"/>
-<pad name="1" x="-1.27" y="0" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="1.27" y="0" drill="0.8128" shape="long" rot="R90"/>
+<pad name="1" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="2" x="1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
 <text x="-1.778" y="1.397" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-1.778" y="-2.667" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
@@ -9410,8 +9410,8 @@ type 0204, grid 7.5 mm</description>
 <wire x1="2.286" y1="1.016" x2="1.905" y2="1.016" width="0.1524" layer="21"/>
 <wire x1="2.286" y1="-1.016" x2="1.905" y2="-1.016" width="0.1524" layer="21"/>
 <wire x1="2.54" y1="-0.762" x2="2.54" y2="0.762" width="0.1524" layer="21"/>
-<pad name="1" x="-3.81" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="3.81" y="0" drill="0.8128" shape="octagon"/>
+<pad name="1" x="-3.81" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="2" x="3.81" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
 <text x="-2.54" y="1.2954" size="0.9906" layer="25" ratio="10">&gt;NAME</text>
 <text x="-1.6256" y="-0.4826" size="0.9906" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="2.54" y1="-0.254" x2="2.921" y2="0.254" layer="21"/>
@@ -12734,8 +12734,8 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <wire x1="-1.9311" y1="0.16" x2="-2.4421" y2="0.639" width="0.2032" layer="51" curve="65.201851"/>
 <circle x="-2.5611" y="0.025" radius="1.915" width="0.2032" layer="21"/>
 <circle x="2.5189" y="0.025" radius="1.915" width="0.2032" layer="21"/>
-<pad name="1" x="-2.5611" y="0.025" drill="1.5" diameter="2"/>
-<pad name="2" x="2.5189" y="0.025" drill="1.5" diameter="2"/>
+<pad name="1" x="-2.5611" y="0.025" drill="1.3" diameter="2"/>
+<pad name="2" x="2.5189" y="0.025" drill="1.3" diameter="2"/>
 <text x="-4.7511" y="4.445" size="1.27" layer="25">&gt;NAME</text>
 <text x="6.985" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
@@ -12806,9 +12806,9 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <wire x1="-3.81" y1="-1.016" x2="-3.556" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="1.016" y1="-1.27" x2="-1.016" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="-1.524" y1="-1.27" x2="-3.556" y2="-1.27" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="1" shape="square" rot="R90"/>
-<pad name="2" x="0" y="0" drill="1" shape="square" rot="R90"/>
-<pad name="3" x="2.54" y="0" drill="1" shape="square" rot="R90"/>
+<pad name="1" x="-2.54" y="0" drill="0.9144" shape="long" rot="R90"/>
+<pad name="2" x="0" y="0" drill="0.9144" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="0" drill="0.9144" shape="long" rot="R90"/>
 <text x="-3.556" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.54" y="-2.667" size="0.9906" layer="21" ratio="12">1</text>
 <text x="0" y="-2.667" size="0.9906" layer="21" ratio="12">2</text>
@@ -12858,18 +12858,18 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <wire x1="7.239" y1="-2.54" x2="7.62" y2="-2.159" width="0.1524" layer="21"/>
 <wire x1="7.239" y1="-2.54" x2="5.461" y2="-2.54" width="0.1524" layer="21"/>
 <wire x1="5.08" y1="-2.159" x2="5.461" y2="-2.54" width="0.1524" layer="21"/>
-<pad name="1" x="-6.35" y="-1.27" drill="1" shape="octagon"/>
-<pad name="2" x="-6.35" y="1.27" drill="1" shape="octagon"/>
-<pad name="3" x="-3.81" y="-1.27" drill="1" shape="octagon"/>
-<pad name="4" x="-3.81" y="1.27" drill="1" shape="octagon"/>
-<pad name="5" x="-1.27" y="-1.27" drill="1" shape="octagon"/>
-<pad name="6" x="-1.27" y="1.27" drill="1" shape="octagon"/>
-<pad name="7" x="1.27" y="-1.27" drill="1" shape="octagon"/>
-<pad name="8" x="1.27" y="1.27" drill="1" shape="octagon"/>
-<pad name="9" x="3.81" y="-1.27" drill="1" shape="octagon"/>
-<pad name="10" x="3.81" y="1.27" drill="1" shape="octagon"/>
-<pad name="11" x="6.35" y="-1.27" drill="1" shape="octagon"/>
-<pad name="12" x="6.35" y="1.27" drill="1" shape="octagon"/>
+<pad name="1" x="-6.35" y="-1.27" drill="0.9144" diameter="1.6764" shape="octagon"/>
+<pad name="2" x="-6.35" y="1.27" drill="0.9144" diameter="1.6764" shape="octagon"/>
+<pad name="3" x="-3.81" y="-1.27" drill="0.9144" diameter="1.6764" shape="octagon"/>
+<pad name="4" x="-3.81" y="1.27" drill="0.9144" diameter="1.6764" shape="octagon"/>
+<pad name="5" x="-1.27" y="-1.27" drill="0.9144" diameter="1.6764" shape="octagon"/>
+<pad name="6" x="-1.27" y="1.27" drill="0.9144" diameter="1.6764" shape="octagon"/>
+<pad name="7" x="1.27" y="-1.27" drill="0.9144" diameter="1.6764" shape="octagon"/>
+<pad name="8" x="1.27" y="1.27" drill="0.9144" diameter="1.6764" shape="octagon"/>
+<pad name="9" x="3.81" y="-1.27" drill="0.9144" diameter="1.6764" shape="octagon"/>
+<pad name="10" x="3.81" y="1.27" drill="0.9144" diameter="1.6764" shape="octagon"/>
+<pad name="11" x="6.35" y="-1.27" drill="0.9144" diameter="1.6764" shape="octagon"/>
+<pad name="12" x="6.35" y="1.27" drill="0.9144" diameter="1.6764" shape="octagon"/>
 <text x="-6.858" y="-4.191" size="1.27" layer="21" ratio="10">1</text>
 <text x="-4.318" y="-4.191" size="1.27" layer="21" ratio="10">2</text>
 <text x="-1.778" y="-4.191" size="1.27" layer="21" ratio="10">3</text>
@@ -12907,8 +12907,8 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <wire x1="-1.27" y1="-0.254" x2="-1.27" y2="-2.286" width="0.1524" layer="21"/>
 <wire x1="-1.016" y1="-2.54" x2="-1.27" y2="-2.286" width="0.1524" layer="21"/>
 <wire x1="-1.016" y1="-2.54" x2="1.016" y2="-2.54" width="0.1524" layer="21"/>
-<pad name="1" x="0" y="-1.27" drill="1" shape="long"/>
-<pad name="2" x="0" y="1.27" drill="1" shape="long"/>
+<pad name="1" x="0" y="-1.27" drill="0.9144" shape="long"/>
+<pad name="2" x="0" y="1.27" drill="0.9144" shape="long"/>
 <text x="-1.651" y="-2.54" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="2.921" y="-2.54" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 <rectangle x1="-0.3048" y1="0.9652" x2="0.3048" y2="1.5748" layer="51"/>
@@ -13240,8 +13240,8 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <wire x1="-1.7643" y1="-1.0082" x2="0" y2="-2.032" width="0.254" layer="21" curve="60.255215"/>
 <wire x1="-2.032" y1="0" x2="-1.7891" y2="0.9634" width="0.254" layer="51" curve="-28.301701"/>
 <wire x1="-2.032" y1="0" x2="-1.7306" y2="-1.065" width="0.254" layer="51" curve="31.60822"/>
-<pad name="A" x="-1.27" y="0" drill="0.8128" shape="long" rot="R90"/>
-<pad name="K" x="1.27" y="0" drill="0.8128" shape="long" rot="R90"/>
+<pad name="A" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="K" x="1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
 <text x="1.905" y="0.381" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="1.905" y="-1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
@@ -14965,7 +14965,7 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <part name="C_IN" library="rcl" deviceset="CPOL-EU" device="E7.5-16" value="2200uF"/>
 <part name="SUPPLY5" library="supply2" deviceset="+12V" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
-<part name="R_3.3V" library="rcl" deviceset="R-US_" device="0207/2V" value="47"/>
+<part name="R_3.3V" library="rcl" deviceset="R-US_" device="0204/7" value="47"/>
 <part name="OUTPUT" library="con-phoenix-508" deviceset="MKDSN1,5/2-5,08" device=""/>
 <part name="INPUT" library="con-phoenix-508" deviceset="MKDSN1,5/2-5,08" device=""/>
 <part name="JP2" library="jumper" deviceset="JP2E" device=""/>
@@ -14973,7 +14973,7 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <part name="R2" library="rcl" deviceset="R-US_" device="0207/10" value="1.5k"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0207/7" value="1k"/>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
-<part name="R3" library="rcl" deviceset="R-US_" device="0207/10" value="1.5k"/>
+<part name="R3" library="rcl" deviceset="R-US_" device="0207/7" value="1.5k"/>
 <part name="ZD1" library="diode" deviceset="BZV10" device=""/>
 <part name="LED1" library="led" deviceset="LED" device="3MM"/>
 <part name="R_LED1" library="rcl" deviceset="R-US_" device="0204/2V" value="4.7k"/>
@@ -15000,7 +15000,7 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <part name="TO_WRITER" library="jumper" deviceset="JP6Q" device=""/>
 <part name="JP5" library="jumper" deviceset="JP1E" device=""/>
 <part name="LED2" library="led" deviceset="LED" device="3MM"/>
-<part name="R_LED2" library="rcl" deviceset="R-US_" device="0204/5" value="4.7k"/>
+<part name="R_LED2" library="rcl" deviceset="R-US_" device="0204/7" value="4.7k"/>
 <part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
 <part name="PAD1" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD2" library="wirepad" deviceset="1,6/0,8" device=""/>
